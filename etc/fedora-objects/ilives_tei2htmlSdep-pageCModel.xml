@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<foxml:digitalObject VERSION="1.1" PID="ilives:tei2htmlSdep-pageCModel"
+xmlns:foxml="info:fedora/fedora-system:def/foxml#"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="info:fedora/fedora-system:def/foxml# http://www.fedora.info/definitions/1/0/foxml1-1.xsd">
+<foxml:objectProperties>
+<foxml:property NAME="info:fedora/fedora-system:def/model#state" VALUE="Active"/>
+<foxml:property NAME="info:fedora/fedora-system:def/model#label" VALUE="ilives:tei2htmlSdep-pageCModel"/>
+<foxml:property NAME="info:fedora/fedora-system:def/model#ownerId" VALUE="fedoraAdmin"/>
+<foxml:property NAME="info:fedora/fedora-system:def/model#createdDate" VALUE="2009-05-21T03:24:05.906Z"/>
+<foxml:property NAME="info:fedora/fedora-system:def/view#lastModifiedDate" VALUE="2009-12-14T13:54:22.812Z"/>
+</foxml:objectProperties>
+<foxml:datastream ID="AUDIT" STATE="A" CONTROL_GROUP="X" VERSIONABLE="false">
+<foxml:datastreamVersion ID="AUDIT.0" LABEL="Audit Trail for this object" CREATED="2009-05-21T03:24:05.906Z" MIMETYPE="text/xml" FORMAT_URI="info:fedora/fedora-system:format/xml.fedora.audit">
+<foxml:xmlContent>
+<audit:auditTrail xmlns:audit="info:fedora/fedora-system:def/audit#">
+<audit:record ID="AUDREC1">
+<audit:process type="Fedora API-M"/>
+<audit:action>ingest</audit:action>
+<audit:componentID></audit:componentID>
+<audit:responsibility>fedoraAdmin</audit:responsibility>
+<audit:date>2009-11-12T14:57:01.366Z</audit:date>
+<audit:justification>Ingested from local file /Users/aoneill/dev/iiv/iiv/etc/fedora-objects/ilives_tei2htmlSdep-pageCModel.xml</audit:justification>
+</audit:record>
+<audit:record ID="AUDREC2">
+<audit:process type="Fedora API-M"/>
+<audit:action>ingest</audit:action>
+<audit:componentID></audit:componentID>
+<audit:responsibility>fedoraAdmin</audit:responsibility>
+<audit:date>2009-11-20T17:47:18.741Z</audit:date>
+<audit:justification>Ingested from local file /Users/aoneill/tmp/ilives_tei2htmlSdep-pageCModel.xml</audit:justification>
+</audit:record>
+<audit:record ID="AUDREC3">
+<audit:process type="Fedora API-M"/>
+<audit:action>modifyDatastreamByValue</audit:action>
+<audit:componentID>XSL</audit:componentID>
+<audit:responsibility>fedoraAdmin</audit:responsibility>
+<audit:date>2009-12-14T13:54:22.812Z</audit:date>
+<audit:justification></audit:justification>
+</audit:record>
+</audit:auditTrail>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+</foxml:datastream>
+<foxml:datastream ID="RELS-EXT" STATE="A" CONTROL_GROUP="X" VERSIONABLE="false">
+<foxml:datastreamVersion ID="RELS-EXT.1" LABEL="RDF Statements about this object" CREATED="2009-05-21T03:25:04.961Z" MIMETYPE="application/rdf+xml" FORMAT_URI="info:fedora/fedora-system:FedoraRELSExt-1.0" SIZE="614">
+<foxml:xmlContent>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+          <rdf:Description rdf:about="info:fedora/ilives:tei2htmlSdep-pageCModel">
+            <hasModel xmlns="info:fedora/fedora-system:def/model#" rdf:resource="info:fedora/fedora-system:ServiceDeployment-3.0"></hasModel>
+            <isDeploymentOf xmlns="info:fedora/fedora-system:def/model#" rdf:resource="info:fedora/ilives:tei2htmlSdef"></isDeploymentOf>
+            <isContractorOf xmlns="info:fedora/fedora-system:def/model#" rdf:resource="info:fedora/ilives:pageCModel"></isContractorOf>
+          </rdf:Description>
+        </rdf:RDF>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+</foxml:datastream>
+<foxml:datastream ID="DC" STATE="A" CONTROL_GROUP="X" VERSIONABLE="true">
+<foxml:datastreamVersion ID="DC1.0" LABEL="Dublin Core Record for this object" CREATED="2009-05-21T03:24:05.906Z" MIMETYPE="text/xml" FORMAT_URI="http://www.openarchives.org/OAI/2.0/oai_dc/" SIZE="413">
+<foxml:xmlContent>
+<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+  <dc:title>ilives:tei2htmlSdep-pageCModel</dc:title>
+  <dc:identifier>ilives:tei2htmlSdep-pageCModel</dc:identifier>
+</oai_dc:dc>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+</foxml:datastream>
+<foxml:datastream ID="DSINPUTSPEC" STATE="A" CONTROL_GROUP="X" VERSIONABLE="false">
+<foxml:datastreamVersion ID="DSINPUTSPEC.3" LABEL="Datastream Input Specification" CREATED="2009-09-17T02:47:11.226Z" MIMETYPE="text/xml" FORMAT_URI="info:fedora/fedora-system:FedoraDSInputSpec-1.1" SIZE="718">
+<foxml:xmlContent>
+<fbs:DSInputSpec xmlns:fbs="http://fedora.comm.nsdlib.org/service/bindspec" label="tei2htmlSdepInputSpec">
+          <fbs:DSInput DSMax="1" DSMin="1" DSOrdinality="false" wsdlMsgPartName="TEI">
+            <fbs:DSInputLabel>TEI</fbs:DSInputLabel>
+            <fbs:DSMIME>text/xml</fbs:DSMIME>
+            <fbs:DSInputInstruction></fbs:DSInputInstruction>
+          </fbs:DSInput>
+          <fbs:DSInput DSMax="1" DSMin="1" DSOrdinality="false" pid="ilives:tei2htmlSdep-pageCModel" wsdlMsgPartName="XSL">
+            <fbs:DSInputLabel>XSL</fbs:DSInputLabel>
+            <fbs:DSMIME>text/xml</fbs:DSMIME>
+            <fbs:DSInputInstruction></fbs:DSInputInstruction>
+          </fbs:DSInput>
+        </fbs:DSInputSpec>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+</foxml:datastream>
+<foxml:datastream ID="WSDL" STATE="A" CONTROL_GROUP="X" VERSIONABLE="false">
+<foxml:datastreamVersion ID="WSDL.3" LABEL="WSDL Bindings" CREATED="2009-09-17T02:47:56.422Z" MIMETYPE="text/xml" FORMAT_URI="http://schemas.xmlsoap.org/wsdl/" SIZE="1938">
+<foxml:xmlContent>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap" xmlns:soapenc="http://schemas.xmlsoap.org/wsdl/soap/encoding" xmlns:this="tei2htmlSdep" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="tei2htmlSdep" targetNamespace="tei2htmlSdep">
+          <wsdl:message name="tei2htmlRequestMsg">
+            <wsdl:part name="TEI" type="xsd:string"></wsdl:part>
+            <wsdl:part name="XSL" type="xsd:string"></wsdl:part>
+          </wsdl:message>
+          <wsdl:message name="response">
+            <wsdl:part name="exhibit" type="xsd:base64Binary"></wsdl:part>
+          </wsdl:message>
+          <wsdl:portType name="tei2html_portType">
+            <wsdl:operation name="tei2html">
+              <wsdl:input message="this:tei2htmlRequestMsg"></wsdl:input>
+              <wsdl:output message="this:response"></wsdl:output>
+            </wsdl:operation>
+          </wsdl:portType>
+          <wsdl:service name="tei2html_service">
+            <wsdl:port binding="this:tei2html_binding" name="tei2html_port">
+              <http:address location="http://local.fedora.server/saxon/"></http:address>
+            </wsdl:port>
+          </wsdl:service>
+          <wsdl:binding name="tei2html_binding" type="this:tei2html_portType">
+            <http:binding verb="GET"></http:binding>
+            <wsdl:operation name="tei2html">
+              <http:operation location="SaxonServlet?source=(TEI)&amp;style=(XSL)&amp;clear-stylesheet-cache=yes"></http:operation>
+              <wsdl:input>
+                <http:urlReplacement></http:urlReplacement>
+              </wsdl:input>
+              <wsdl:output>
+                <mime:content type="text/html"></mime:content>
+              </wsdl:output>
+            </wsdl:operation>
+          </wsdl:binding>
+        </wsdl:definitions>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+</foxml:datastream>
+<foxml:datastream ID="METHODMAP" STATE="A" CONTROL_GROUP="X" VERSIONABLE="false">
+<foxml:datastreamVersion ID="METHODMAP.6" LABEL="Deployment Method Map" CREATED="2009-09-17T02:51:06.102Z" MIMETYPE="text/xml" FORMAT_URI="info:fedora/fedora-system:FedoraSDepMethodMap-1.1" SIZE="695">
+<foxml:xmlContent>
+<fmm:MethodMap xmlns:fmm="http://fedora.comm.nsdlib.org/service/methodmap" name="methodmap">
+          <fmm:Method operationName="tei2html" wsdlMsgName="tei2htmlRequestMsg" wsdlMsgOutput="response">
+            <fmm:DatastreamInputParm parmName="TEI" passBy="URL_REF" required="true"></fmm:DatastreamInputParm>
+            <fmm:DatastreamInputParm parmName="XSL" passBy="URL_REF" required="true"></fmm:DatastreamInputParm>
+            <fmm:UserInputParm defaultValue="" parmName="uid" passBy="VALUE" required="false"></fmm:UserInputParm>
+            <fmm:MethodReturnType wsdlMsgName="response" wsdlMsgTOMIME="text/html"></fmm:MethodReturnType>
+          </fmm:Method>
+        </fmm:MethodMap>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+</foxml:datastream>
+<foxml:datastream ID="XSL" STATE="A" CONTROL_GROUP="X" VERSIONABLE="false">
+<foxml:datastreamVersion ID="XSL.1" LABEL="XSL stylesheet for tei2html conversion" CREATED="2009-12-14T13:54:22.812Z" MIMETYPE="text/xml" SIZE="2902">
+<foxml:xmlContent>
+<xsl:stylesheet xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" exclude-result-prefixes="tei" version="2.0">
+  <xsl:output doctype-public="-//W3C//DTD HTML 4.01 Strict//EN" doctype-system="http://www.w3.org/TR/html4/strict.dtd" indent="yes" method="html" omit-xml-declaration="yes"></xsl:output>
+  <xsl:template match="tei:TEI">
+    <html>
+      <head>
+        <title>
+          <xsl:value-of select="normalize-space(tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title)"></xsl:value-of>
+        </title>
+      </head>
+      <body>
+        <xsl:apply-templates></xsl:apply-templates>
+      </body>
+    </html>
+  </xsl:template>
+  <xsl:template match="tei:body">
+    <div class="tei">
+      <xsl:apply-templates></xsl:apply-templates>
+    </div>
+  </xsl:template>
+  <xsl:template match="tei:p">
+    <p>
+      <xsl:apply-templates></xsl:apply-templates>
+    </p>
+  </xsl:template>
+  <xsl:template match="tei:date">
+    <span class="date">
+      <xsl:value-of select="normalize-space(.)"></xsl:value-of>
+    </span>
+  </xsl:template>
+  <xsl:template match="tei:persName">
+    <xsl:choose>
+      <xsl:when test="(.//tei:surname) and (.//tei:forename)">
+        <span class="persName">
+          <a>
+            <xsl:attribute name="class">search persName</xsl:attribute>
+            <xsl:attribute name="target">_blank</xsl:attribute>
+            <xsl:attribute name="href">http://islandlives.net/fedora/ilives_book_search/tei.persNameTERM:%22<xsl:value-of select=".//tei:surname"></xsl:value-of>+<xsl:value-of select=".//tei:forename"></xsl:value-of>%22+AND+dc.type:collection</xsl:attribute>
+            <xsl:apply-templates select="*|node()"></xsl:apply-templates>
+          </a>
+        </span>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:apply-templates select="*|node()"></xsl:apply-templates>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+  <xsl:template match="tei:placeName">
+    <a>
+      <xsl:attribute name="class">search placeName</xsl:attribute>
+      <xsl:attribute name="target">_blank</xsl:attribute>
+      <xsl:attribute name="href">http://islandlives.net/fedora/ilives_book_search/tei.placeNameTERM:%22<xsl:value-of select="normalize-space(.)"></xsl:value-of>%22+AND+dc.type:collection</xsl:attribute>
+      <xsl:value-of select="normalize-space(.)"></xsl:value-of>
+    </a>
+  </xsl:template>
+  <xsl:template match="tei:orgName">
+    <a>
+      <xsl:attribute name="class">search orgName</xsl:attribute>
+      <xsl:attribute name="target">_blank</xsl:attribute>
+      <xsl:attribute name="href">http://islandlives.net/fedora/ilives_book_search/tei.orgNameTERM:%22<xsl:value-of select="normalize-space(.)"></xsl:value-of>%22+AND+dc.type:collection</xsl:attribute>
+      <xsl:value-of select="normalize-space(.)"></xsl:value-of>
+    </a>
+  </xsl:template>
+  <xsl:template match="tei:teiHeader"></xsl:template>
+</xsl:stylesheet>
+</foxml:xmlContent>
+</foxml:datastreamVersion>
+</foxml:datastream>
+</foxml:digitalObject>

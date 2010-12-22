@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================================================== 
+     iiv    
+     Islandora Image Viewer
+     ====================================================================== -->
+<project name="iiv" default="default">
+    <description>
+            Islandora Image Viewer
+    </description>
+	
+	<property name="iiv.deployDir" value="/Volumes/root/usr/local/fedora/tomcat/webapps"/>
+
+    <target name="default" description="Islandora Image Viewer">
+    	<echo>Build file for Islandora Image Viewer</echo>
+    </target>
+	
+    <target name="war" description="build iiv.war file">
+    	<mkdir dir="dist"/>
+    	<zip destfile="dist/iiv.jar" basedir="build/classes"/>
+        <zip destfile="dist/iiv.war">
+        	<fileset dir="WebContent"/>
+        	<zipfileset dir="dist" includes="iiv.jar" prefix="WEB-INF/lib"/>
+    	</zip>
+    	<delete file="dist/iiv.jar"/>
+    </target>
+	
+	<target name="deploy" description="deploy iiv.war to tomcat server" depends="deploy-check, war" if="iiv.deployCheckPassed">
+		<copy file="dist/iiv.war" todir="${iiv.deployDir}"/>
+	</target>
+	
+    <target name="deploy-check">
+		<available file="${iiv.deployDir}" property="iiv.deployCheckPassed"/>
+    </target>
+
+</project>

@@ -1,0 +1,19 @@
+// add this function to showStreamsInFieldSets.php
+
+  function showJP2($collapsed=false) {
+    $qs = '';
+    if ($user->uid != 0) {
+      $qs = '?uid=' + base64_encode($user->name + ':' + $user->sid);
+    }
+    
+    $viewer_url = variable_get('fedora_base_url', '') . '/get/' . $this->pid . '/ilives:viewerSdef/getViewer' + $qs;
+    $html = '<iframe src="' . $viewer_url .'" frameborder="0" style="width: 100%; height: 400px;">Errors: unable to load viewer</iframe>';
+
+    $fieldset = array (
+      '#title' => t('Viewer'), 
+      '#collapsible' => TRUE, 
+      '#collapsed' => $collapsed, 
+      '#value' => $html);
+
+    return theme('fieldset', $fieldset);
+  }

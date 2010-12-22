@@ -1,0 +1,16 @@
+outstanding items
+
+- major
+ - new embed function for drupal (instead of fieldset)
+ - is getViewer service still needed? If so, do we need to add an ajax embed mode?
+
+- minor
+ - calculate scale value for printing (instead of assuming level 3)
+ - loading indicators on image panel and text panel
+ - load failure indicators on image panel, text panel, print page?
+ - renable single-page mode
+ 
+- future
+ - annotations
+ - social (share/email)
+ - hide image panel (for text-only view)
